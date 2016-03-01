@@ -1,0 +1,23 @@
+<side-bar-directive></side-bar-directive>
+<div class="sidebar-container">
+	<div class='homeContainer'>
+		<a ui-sref='home' class='homeLink' showInput>
+			<p class='sideText' id='linkHome'>HOME</p>
+		</a>
+	</div>
+	<div class='contentContainer'>
+		<div class='textContainer'>
+			<a ui-sref='players' ng-click='toggleSearch()' class='playersLink'>
+				<p class='sideText'>PLAYERS</p>
+			</a>
+		</div>
+		<div class='textContainer'>
+			<a ui-sref='teams' class='teamsLink'>
+				<p class='sideText'>TEAMS</p>
+			</a>
+		</div>
+		<div class='inputContainer'>
+			<input type="text" placeholder="Enter Player Name" class='searchFor'>
+		</div>
+	</div>
+</div>
