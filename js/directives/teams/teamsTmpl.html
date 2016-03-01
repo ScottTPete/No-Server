@@ -1,29 +1,68 @@
 <side-bar-directive></side-bar-directive>
-<!--<div class='teamContainer'>-->
-<!--	<div class='teamsList'>-->
-<!--		<ul>-->
-<!--			<li ng-repeat='team in teams track by $index'><a ng-click='getTeamName(team.teamName)'>{{team.city}} {{team.teamName}}</a></li>-->
-<!--		</ul>-->
+<div class='teamContainer'>
+	<div class='teamsList'>
+		<a ng-click='getTeamName(team.teamName)' ng-repeat='team in teams track by $index'>
+			<p class=teamNames>{{team.city}} {{team.teamName}}</p>
+		</a>
+	</div>
+</div>
 
 
-<!--	</div>-->
-<!--</div>-->
+<div class='mainContent' ng-show='team'>
 
-<!--<div class='mainContent'>-->
 
-<!--	<div class='mainSidebar'>-->
-<!--		<div class='logo'>-->
-<!--			<img ng-src=''>-->
-<!--		</div>-->
-<!--		<div class='startingFive'>-->
-<!--			<p class='starters' ng-repeat='player in players'></p>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--	<div class='mainHeader'>-->
-<!--		<h1 class='teamName'></h1>-->
-<!--	</div>-->
+	<div class='mainContentSidebar'>
+		<div class='logo'>
+			<img ng-src='{{team.logo}}'>
+		</div>
+		<div class='startingFiveContainer'>
+			<h2 class='starters' id='startersHeader'>STARTERS:</h2>
+			<div class='starterContainer' ng-repeat='player in team.startingFive'>
+				<span class='starters' id='players'>{{player}}</span>
+			</div>
+		</div>
+	</div>
+	<div class='mainContentHeader'>
+		<h1 class='teamName'>{{team.city}} {{team.teamName}}</h1>
+	</div>
+	<div class='statsContent'>
+		<div class='teamStatsHeader'>
+			<div>
+				<span>W</span>
+			</div>
+			<div>
+				<span>L</span>
+			</div>
+			<div>
+				<span>%</span>
+			</div>
+			<div>
+				<span>HOME</span>
+			</div>
+			<div>	
+				<span>ROAD</span>
+			</div>
+		</div>
+		<div class='statsBar'>
+			<div>
+				<span>{{team.wins}}</span>
+			</div>
+			<div>
+				<span>{{team.losses}}</span>
+			</div>
+			<div>
+				<span>{{team.percent}}</span>
+			</div>
+			<div>
+				<span>{{team.homeWins}} - {{team.homeLosses}}</span>
+			</div>
+			<div>
+				<span>{{team.roadWins}} - {{team.roadLosses}}</span>
+			</div>
+		</div>
+	</div>
 
-<!--	<div class='statsContent'>-->
-<!--	</div>-->
 
-<!--</div>-->
+
+
+</div>

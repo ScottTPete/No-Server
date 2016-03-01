@@ -85,7 +85,7 @@ angular.module('nbaStatsApp')
 		{
 			teamName: 'Bulls',
 			city: 'Chicago',
-			logo: 'images/buls-logo.gif',
+			logo: 'images/bulls-logo.gif',
 			wins: 30,
 			losses: 26,
 			percent: .536,
@@ -168,7 +168,7 @@ angular.module('nbaStatsApp')
 			logo: 'images/pistons-logo.gif',
 			wins: 29,
 			losses: 29,
-			percent: .500,
+			percent: '.500',
 			homeWins: 17,
 			homeLosses: 11,
 			roadWins: 12,
@@ -185,7 +185,7 @@ angular.module('nbaStatsApp')
 		{
 			teamName: 'Warriors',
 			city: 'Golden State',
-			logo: 'images/warriors.gif',
+			logo: 'images/warriors-logo.gif',
 			wins: 52,
 			losses: 5,
 			percent: .912,
@@ -208,7 +208,7 @@ angular.module('nbaStatsApp')
 			logo: 'images/rockets-logo.gif',
 			wins: 29,
 			losses: 29,
-			percent: .500,
+			percent: '.500',
 			homeWins: 16,
 			homeLosses: 13,
 			roadWins: 13,
@@ -579,7 +579,7 @@ angular.module('nbaStatsApp')
 				center: 'Rudy Gobert',
 				pointGuard: 'Shelvin Mack',
 				shootingGuard: 'Rodney Hood',
-				smallForward: 'Jeff Gordon'
+				smallForward: 'Gordon Hayward'
 			}
 		},
 		{

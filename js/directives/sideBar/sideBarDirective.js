@@ -3,7 +3,7 @@ angular.module('nbaStatsApp')
 		return {
 			restrict: 'E',
 			templateUrl: '/js/directives/sideBar/sideBarTmpl.html',
-//			controller: 'playerController'
+			controller: 'sideBarCtrl'
 		}
 	
 });

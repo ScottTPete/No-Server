@@ -13,15 +13,14 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-/*	position: relative;*/
+
 	
 }
 .sidebar-container {
 	width: 15%;
 	height: 25%;
-/*	display: block;*/
 	text-align: center;
-	border: 1px solid red;
+	
 
 	
 }
@@ -39,7 +38,7 @@ body {
 	margin-left: 5px;
 }
 .sideText {
-	color: #FF0000;
+	color: whitesmoke;
 	font-size: 17px;
 	font-family: 'Voces', cursive;
 	font-weight: 600;
@@ -54,7 +53,7 @@ body {
 }
 .searchFor {
 	border: 5px solid white;
-	display: none;
+/*	display: none;*/
 }
 .homeLink {
 	text-decoration: none;
@@ -86,18 +85,171 @@ body {
 	margin-left: 20px;
 }
 .teamContainer {
-	margin-top: 50px;
-	border: 1px solid yellow;
-	display: block;
+	margin-top: 10px;
+/*	display: block;*/
+	width: 15%;
+	background: rgba(0, 0, 0, .5);
+	border: 1px solid white;
+	border-radius: 25px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: 5px;
 }
 .teamsList {
-	display: block;
-/*	float: left;*/
-	background-color: black;
-	opacity: rgba(0, 0, 0, .31);
+/*	display: block;*/
+	
 }
-.teamsList a {
+.teamNames {
+	color: whitesmoke;
+	cursor: pointer;
+	font-family: 'Voces', cursive;
+	display: table;
+	margin: 5px 0px 0px 15px;
+}
+.teamNames:hover {
+	font-size: 17px;
+}
+.mainContent {
+	width: 600px;
+	height: 600px;
+	border: 5px solid white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+/*	background-color: #4d4d4d;*/
+	background: rgba(0, 0, 0, .9);
+	border-radius: 25px;
+}
+.mainContentSidebar {
+/*	border: 1px solid red;*/
+	height: 100%;
+	width: 28%;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	border-right: 1px solid white;
+}
+.starters {
+	color: whitesmoke;
+	font-family: 'Voces', cursive;
+/*
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+*/
+}
+
+.mainContentHeader {
+	width: 71%;
+	height: 100px;
 	color: white;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+	
+	
+}
+.teamName {
+	font-size: 40px;
+	margin: 0 auto;
+	color: whitesmoke;
+/*	Next three lines will vertically center*/
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#startersHeader {
+/*	display: none;*/
+	color: whitesmoke;
+	margin-top: 25px;
+}
+.starterContainer {
+	text-align: center;
+/*	margin-top: 25px;*/
+/*
+	line-height: 1.4;
+	height: 100%;
+*/
+	background-color: slategray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 16%;
+	
 }
 
-
+.startingFiveContainer {
+	margin-top: .8rem;
+	display: table;
+/*	align-content: center;*/
+/*	justify-content: center;*/
+	height: calc(100% - 160px);
+	width: 100%;
+	
+}
+.statsContent {
+	display: inline-block;
+	margin-top: 1.25rem;
+	height: 500px;
+	width: 72%;
+	float: left;
+/*	position: relative;*/
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.teamStatsHeader {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 5px 7px;
+	height: 32px;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+.starters {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.teamStatsHeader span {
+	color: white;
+	font-family: "Voces", cursive;
+}
+.statsBar {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 5px 7px;
+}
+.statsBar {
+	color: white;
+	font-family: 'Voces', cursive;
+}
+.playerContainer {
+	margin-top: 10px;
+	/*	display: block;*/
+	width: 15%;
+	background: rgba(0, 0, 0, .5);
+	border: 1px solid white;
+	border-radius: 25px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: 5px;
+}
+.playerNames {
+	color: whitesmoke;
+	cursor: pointer;
+	font-family: 'Voces', cursive;
+	display: table;
+	margin: 5px 0px 0px 15px;
+}
+.playerNames:hover {
+	font-size: 17px;
+}
+/*
+.playerImage {
+	width: 100px;
+	height: 100px;
+}*/

@@ -8,7 +8,7 @@ angular.module('nbaStatsApp', ['ui.router'])
 			})
 			.state ('players', {
 				url: '/players',
-				templateUrl: '/js/directives/players/playersTmpl.html',
+				template: '<players-directive></players-directive>',
 				controller: 'playerController'
 			})
 			.state ('teams', {
