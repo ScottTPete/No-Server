@@ -1,29 +1,32 @@
 <side-bar-directive></side-bar-directive>
+
+<div class='inputContainer'>
+	<input type="text" ng-show='state == "players"' placeholder="Enter Player Name" class='searchFor' ng-model='filterPlayer'>
+</div>
+
 <div class='playerContainer'>
 	<div class='playersList'>
-		<a ng-click='getPlayerName(player.name)' ng-repeat='player in players track by $index'>
+		<a ng-click='getPlayerName(player.name)' ng-repeat='player in players | orderBy: "name" | filter:filterPlayer track by $index'>
 			<p class='playerNames'>{{player.name}}</p>
 		</a>
 	</div>
 </div>
 
 
-<div class='mainContent' ng-show='players'>
+<div class="nbaLeaders" ng-hide='statsLeaders'>
+	
+</div>
 
+<div class='mainContent' ng-show='playerBox'>
 
 	<div class='mainContentSidebar'>
-		<div class='logo'>
-			<img ng-src='{{player.img}}' class="playerImage">
+		<div class='imageContainer'>
+			<img ng-src='{{playerSelected.img}}' class="playerImage">
 		</div>
-		<div class='startingFiveContainer'>
-			<h2 class='starters' id='startersHeader'>STARTERS:</h2>
-			<div class='starterContainer' ng-repeat='player in team.startingFive'>
-				<span class='starters' id='players'>{{player}}</span>
-			</div>
-		</div>
+		
 	</div>
 	<div class='mainContentHeader'>
-		<h1 class='teamName'>{{team.city}} {{team.teamName}}</h1>
+		<h1 class='playerName'>{{playerSelected.name}}</h1>
 	</div>
 	<div class='statsContent'>
 		<div class='teamStatsHeader'>
@@ -31,33 +34,33 @@
 				<span>PPG</span>
 			</div>
 			<div>
-				<span>L</span>
+				<span>GP</span>
 			</div>
 			<div>
-				<span>%</span>
+				<span>MPG</span>
 			</div>
 			<div>
-				<span>HOME</span>
+				<span>FG%</span>
 			</div>
 			<div>	
-				<span>ROAD</span>
+				<span>RPG</span>
 			</div>
 		</div>
 		<div class='statsBar'>
 			<div>
-				<span>{{player.ppg}}</span>
+				<span>{{playerSelected.ppg}}</span>
 			</div>
 			<div>
-				<span>{{team.losses}}</span>
+				<span>82</span>
 			</div>
 			<div>
-				<span>{{team.percent}}</span>
+				<span>35</span>
 			</div>
 			<div>
-				<span>{{team.homeWins}} - {{team.homeLosses}}</span>
+				<span>.534</span>
 			</div>
 			<div>
-				<span>{{team.roadWins}} - {{team.roadLosses}}</span>
+				<span>7.4</span>
 			</div>
 		</div>
 	</div>

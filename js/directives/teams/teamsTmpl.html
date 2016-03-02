@@ -2,11 +2,15 @@
 <div class='teamContainer'>
 	<div class='teamsList'>
 		<a ng-click='getTeamName(team.teamName)' ng-repeat='team in teams track by $index'>
-			<p class=teamNames>{{team.city}} {{team.teamName}}</p>
+			<p class='teamNames'>{{team.city}} {{team.teamName}}</p>
 		</a>
 	</div>
 </div>
 
+
+<div class='standingContainer' ng-hide='teamStandings'>
+	
+</div>
 
 <div class='mainContent' ng-show='team'>
 
